@@ -1,0 +1,29 @@
+.detailImage {
+    object-fit: contain;
+    width: 100%;
+  }
+  
+  .detailCard {
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+  }
+  
+  .detailTitle {
+    font-size: 26px;
+    font-weight: 600;
+    color: #ffe81f;
+    text-shadow: 2px 2px 2px black;
+  }
+  
+  .detailSubtitle {
+    font-size: 18px;
+    color: #ffe81f;
+    text-shadow: 2px 2px 2px black;
+  }
+  
+  .detailTable{
+      font-size: 18px;
+      color: #ffe81f;
+      text-shadow: 2px 2px 2px black;
+  }
+  

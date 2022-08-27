@@ -1,0 +1,14 @@
+#red {
+    -webkit-box-shadow: 6px 6px 8px 3px rgba(235,33,46,0.7); 
+    box-shadow: 6px 6px 8px 3px rgba(235,33,46,0.7);
+    }
+
+#green {
+    -webkit-box-shadow: 6px 6px 8px 3px rgba(47,249,36,0.7); 
+        box-shadow: 6px 6px 8px 3px rgba(47,249,36,0.7);
+    }
+
+#blue {
+    -webkit-box-shadow: 6px 6px 8px 3px rgba(46,103,248,0.7); 
+    box-shadow: 6px 6px 8px 3px rgba(46,103,248,0.7);
+    }

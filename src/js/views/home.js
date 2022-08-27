@@ -1,15 +1,32 @@
-import React from "react";
-import rigoImage from "../../img/rigo-baby.jpg";
+import React, { useEffect, useContext } from "react";
 import "../../styles/home.css";
+import { HomeCard } from "../component/homeCard";
+import { Context } from "../store/appContext";
+import { CardDeck } from "reactstrap";
+import charactersImg from "../../img/characters2-sw.jpg";
+import planetsImg from "../../img/planest-sw.png";
+import vehiclesImg from "../../img/vehiclessw.png";
 
-export const Home = () => (
-	<div className="text-center mt-5">
-		<h1>Hello Rigo!</h1>
-		<p>
-			<img src={rigoImage} />
-		</p>
-		<a href="#" className="btn btn-success">
-			If you see this green button, bootstrap is working
-		</a>
-	</div>
-);
+    <CardDeck className="d-flex justify-content-around mt-5">
+      <HomeCard
+        img={charactersImg}
+        title="Characters"
+        link="/people"
+        action="Explore Characters"
+        color="red"
+      ></HomeCard>
+      <HomeCard
+        img={planetsImg}
+        title="Planets"
+        link="/planets"
+        action="Explore Planets"
+        color="green"
+      ></HomeCard>
+      <HomeCard
+        img={vehiclesImg}
+        title="Vehicles"
+        link="/vehicles"
+        action="Explore Vehicles"
+        color="blue"
+      ></HomeCard>
+    </CardDeck>
