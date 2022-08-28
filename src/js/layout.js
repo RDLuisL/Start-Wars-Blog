@@ -7,8 +7,7 @@ import { Characters } from "./views/characters.js";
 import { Planets } from "./views/planets.js";
 import { Vehicles } from "./views/vehicles.js"
 import { Detail } from "./views/detail.js"
-import injectContext from "./store/appContext";
-import { Navbar } from "./component/navbar";
+import { Navbar } from "./component/navbar.js";
 
 
 

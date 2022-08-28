@@ -98,35 +98,35 @@ switch (props.type) {
                     <tbody className="detailTable">
                       <tr>
                         <th scope="row">Climate:</th>
-                        <td>{*****}</td>
+                        <td>????</td>
                       </tr>
                       <tr>
                         <th scope="row">"Diameter millions kilometers:</th>
-                        <td>{*****}</td>
+                        <td>????</td>
                       </tr>
                       <tr>
                         <th scope="row">Gravity m/s2:</th>
-                        <td>{*****}</td>
+                        <td>????</td>
                       </tr>
                       <tr>
                         <th scope="row">Orbital Period in earth days:</th>
-                        <td>{*****}</td>
+                        <td>????</td>
                       </tr>
                       <tr>
                         <th scope="row">Population humanoids:</th>
-                        <td{*****}</td>
+                        <td>????</td>
                       </tr>
                       <tr>
                         <th scope="row">Rotation Period in hrs:</th>
-                        <td{*****}</td>
+                        <td>????</td>
                       </tr>
                       <tr>
                         <th scope="row">Surface Water %:</th>
-                        <td>{*****}</td>
+                        <td>????</td>
                       </tr>
                       <tr>
                         <th scope="row">Terrain Types:</th>
-                        <td>{*****}</td>
+                        <td>????</td>
                       </tr>
                     </tbody>
                   </Table>
@@ -165,35 +165,35 @@ switch (props.type) {
                     <tbody className="detailTable">
                       <tr>
                         <th scope="row">Cargo Capacity in Tons:</th>
-                        <td>{*****}</td>
+                        <td>????</td>
                       </tr>
                       <tr>
                         <th scope="row">Consumables:</th>
-                        <td>{*****}</td>
+                        <td>????</td>
                       </tr>
                       <tr>
                         <th scope="row">Cost in Credits:</th>
-                        <td>{*****}</td>
+                        <td>????</td>
                       </tr>
                       <tr>
                         <th scope="row">Crew:</th>
-                        <td>{*****}</td>
+                        <td>????</td>
                       </tr>
                       <tr>
                         <th scope="row">Manufacturer:</th>
-                        <td>{*****}</td>
+                        <td>????</td>
                       </tr>
                       <tr>
-                        <th scope="row">Max Atmospheric Speed kpm:/th>
-                        <td>{*****}</td>
+                        <th scope="row">Max Atmospheric Speed kpm:</th>
+                        <td>????</td>
                       </tr>
                       <tr>
                         <th scope="row">Model Name:</th>
-                        <td>{*****}</td>
+                        <td>????</td>
                       </tr>
                       <tr>
                         <th scope="row">Max Passengers:</th>
-                        <td>{*****}</td>
+                        <td>????</td>
                       </tr>
                     </tbody>
                   </Table>
