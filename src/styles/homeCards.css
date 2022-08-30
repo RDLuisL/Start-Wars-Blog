@@ -1,99 +1,50 @@
-body {
-    background: url(https://wallpapercave.com/wp/wp2173985.jpg) no-repeat center
-      center fixed;
-    background-size: cover;
-  }
-  
-  .categories, #dropButton,.home-button {
-    font-weight: 600;
-    margin-left: 6px;
-    margin-right: 6px;
-    width: 8rem;
-    border: 2px solid #ffe81f;
-    color: #ffe81f;
-    background-color: black;
-  }
-  
-  .categories:hover,
-  .categories:focus,
-  .categories:active,
-  #dropButton:hover,
-  .home-button:hover {
-    margin-left: 6px;
-    margin-right: 6px;
-    width: 8rem;
-    border: 2px solid black;
-    color: black;
-    background-color: #ffe81f;
-    -webkit-box-shadow: 0px 0px 19px 2px rgba(231, 166, 26, 1);
-    -moz-box-shadow: 0px 0px 19px 2px rgba(231, 166, 26, 1);
-    box-shadow: 0px 0px 19px 2px rgba(231, 166, 26, 1);
-  }
-  
-  .navbar .brand {
-    background: none;
-    max-height: 60px;
-  }
-  
-  #logo {
-    max-height: 60px;
-    overflow: visible;
-    padding-top: 4px;
-    padding-bottom: 0;
-  }
-  
-  #dropMenu, #dropDefault{
-      width: fit-content;
-      font-weight: 600;
-      background-color: black;
-      color: #ffe81f;
-  }
-  
-  .dropDelete {
-      display:flex;
-      justify-content: end;
-      color: #ffe81f;
-      font-weight: 600;
-  }
-  
-  .dropItem {
-      width: 100%;
-      text-decoration: none;
-      font-weight: 600;
-      background-color: black;
-      color: #ffe81f;
-  }
-  
-  .dropItem:hover{
-      border: 1px solid #ffe81f;
-      border-radius:4px;
-      color: black;
-      background-color: #ffe81f;
-      -webkit-box-shadow: 0px 0px 19px 2px rgba(231, 166, 26, 1);
-      -moz-box-shadow: 0px 0px 19px 2px rgba(231, 166, 26, 1);
-      box-shadow: 0px 0px 19px 2px rgba(231, 166, 26, 1);
-  }
-  
-  .item-container:hover {
-      background-color: transparent;
-  }
-  
-  
-  .detailButton, .favoriteButton {
-    font-weight: 600;
-    border: 2px solid #ffe81f;
-    color: #ffe81f;
-    background-color: black;
-  }
-  
-  .detailButton:hover, .favoriteButton:hover {
-    color: black;
-    background-color: #ffe81f;
-    border: 2px solid black;
-    -webkit-box-shadow: 0px 0px 19px 2px rgba(231, 166, 26, 1);
-    -moz-box-shadow: 0px 0px 19px 2px rgba(231, 166, 26, 1);
-    box-shadow: 0px 0px 19px 2px rgba(231, 166, 26, 1);
-  }
-  
-  
-  
+.HomeCard {
+  width: 27rem;
+  height: 26rem;
+  text-align: center;
+  border-radius: 8px;
+  border: 4px ridge #616161;
+}
+
+#text-area {
+  background: url(https://fixthephoto.com/images/content/starry-night-sky-png-61616514258.jpg)
+    center center no-repeat;
+  background-size: cover;
+}
+
+#img-space {
+  height: 18rem;
+  border-bottom: 2px solid #616161;
+}
+
+#img-space img {
+  object-fit: cover;
+  height: 100%;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+#title {
+  font-size: 30px;
+  color: #ffe81f;
+  text-shadow: 2px 2px 2px black;
+}
+
+.exploreButton {
+  font-weight: 600;
+  border: 2px solid #ffe81f;
+  height: 3rem;
+  color: #ffe81f;
+  background-color: black;
+  text-shadow: 2px 2px 2px black;
+}
+
+.exploreButton:hover{
+border: 2px solid black;
+color: black;
+background-color: #ffe81f;
+-webkit-box-shadow: 0px 0px 19px 2px rgba(231, 166, 26, 1);
+-moz-box-shadow: 0px 0px 19px 2px rgba(231, 166, 26, 1);
+box-shadow: 0px 0px 19px 2px rgba(231, 166, 26, 1);
+text-shadow: 2px 2px 2px yellow;
+}

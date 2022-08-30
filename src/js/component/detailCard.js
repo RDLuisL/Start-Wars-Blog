@@ -11,12 +11,16 @@ import {
   Button,
 } from "reactstrap";
 import mando from "../../img/mando.jpg";
-import "../../styles/detailCard.css";
+import "../../styles/homeCards.css";
 
-
+export const DetailCard = (props) => {
+  const { store, actions } = useContext(Context);
+  useEffect(() => {}, []);
+  let activeItem = store.activeItem; 
 switch (props.type) {
     case "characters":
         return (
+
         <div className="container">
           <Card className="detailCard">
             <div className="row d-flex gx-0 justify-content-between no-wrap">
@@ -25,41 +29,41 @@ switch (props.type) {
                   <CardImg
                     className="detailImage"
                     alt="Card image cap"
-                    src={babyYoda}
+                    src={mando}
                   />
                 </div>
               </div>
               <div className="col-5 ">
                 <CardBody>
                   <CardTitle className="detailTitle">
+                    {activeItem.properties.name}
                   </CardTitle>
                   <CardSubtitle
-                    className="mb-2 text-muted"
-                    className="detailSubtitle"
+                    className="mb-2 text-muted detailSubtitle"
                   >
                     Star Wars Profile Character
                   </CardSubtitle>
                   <Table borderless>
                     <tbody className="detailTable">
                       <tr>
-                        <th scope="row">Birth Year</th>
-                        <td>*****</td>
+                        <th scope="row">Birth Year:</th>
+                        <td>{activeItem.properties.birth_year}</td>
                       </tr>
                       <tr>
-                        <th scope="row">Eye Color</th>
-                        <td>*****</td>
+                        <th scope="row">Eye Color:</th>
+                        <td>{activeItem.properties.eye_color}</td>
                       </tr>
                       <tr>
-                        <th scope="row">Gender</th>
-                        <td>*****</td>
+                        <th scope="row">Gender:</th>
+                        <td>{activeItem.properties.gender}</td>
                       </tr>
                       <tr>
-                        <th scope="row">Hair Color</th>
-                        <td>*****</td>
+                        <th scope="row">Hair Color:</th>
+                        <td>{activeItem.properties.hair_color}</td>
                       </tr>
                       <tr>
-                        <th scope="row">Height</th>
-                        <td>*****</td>
+                        <th scope="row">Height:</th>
+                        <td>{activeItem.properties.height}</td>
                       </tr>
                     </tbody>
                   </Table>
@@ -89,8 +93,7 @@ switch (props.type) {
                     {activeItem.properties.name}
                   </CardTitle>
                   <CardSubtitle
-                    className="mb-2 text-muted"
-                    className="detailSubtitle"
+                    className="mb-2 text-muted detailSubtitle"
                   >
                     long time ago in a galaxy far far away...
                   </CardSubtitle>
@@ -98,35 +101,35 @@ switch (props.type) {
                     <tbody className="detailTable">
                       <tr>
                         <th scope="row">Climate:</th>
-                        <td>????</td>
+                        <td>{activeItem.properties.climate}</td>
                       </tr>
                       <tr>
                         <th scope="row">"Diameter millions kilometers:</th>
-                        <td>????</td>
+                        <td>{activeItem.properties.diameter}</td>
                       </tr>
                       <tr>
                         <th scope="row">Gravity m/s2:</th>
-                        <td>????</td>
+                        <td>{activeItem.properties.gravity}</td>
                       </tr>
                       <tr>
                         <th scope="row">Orbital Period in earth days:</th>
-                        <td>????</td>
+                        <td>{activeItem.properties.orbital_period}</td>
                       </tr>
                       <tr>
                         <th scope="row">Population humanoids:</th>
-                        <td>????</td>
+                        <td>{activeItem.properties.population}</td>
                       </tr>
                       <tr>
                         <th scope="row">Rotation Period in hrs:</th>
-                        <td>????</td>
+                        <td>{activeItem.properties.rotation_period}</td>
                       </tr>
                       <tr>
                         <th scope="row">Surface Water %:</th>
-                        <td>????</td>
+                        <td>{activeItem.properties.surface_water + " %"}</td>
                       </tr>
                       <tr>
                         <th scope="row">Terrain Types:</th>
-                        <td>????</td>
+                        <td>{activeItem.properties.terrain}</td>
                       </tr>
                     </tbody>
                   </Table>
@@ -156,44 +159,43 @@ switch (props.type) {
                    
                   </CardTitle>
                   <CardSubtitle
-                    className="mb-2 text-muted"
-                    className="detailSubtitle"
-                  >
+                    className="mb-2 text-muted detailSubtitle"
+                  >      {activeItem.properties.name}
                    Awesome vehicles from Star Wars Universe
                   </CardSubtitle>
                   <Table borderless>
                     <tbody className="detailTable">
                       <tr>
                         <th scope="row">Cargo Capacity in Tons:</th>
-                        <td>????</td>
+                        <td>{activeItem.properties.cargo_capacity}</td>
                       </tr>
                       <tr>
                         <th scope="row">Consumables:</th>
-                        <td>????</td>
+                        <td>{activeItem.properties.consumables}</td>
                       </tr>
                       <tr>
                         <th scope="row">Cost in Credits:</th>
-                        <td>????</td>
+                        <td>{activeItem.properties.cost_in_credits}</td>
                       </tr>
                       <tr>
-                        <th scope="row">Crew:</th>
-                        <td>????</td>
+                        <th scope="row">Crew N°:</th>
+                        <td>{activeItem.properties.crew}</td>
                       </tr>
                       <tr>
                         <th scope="row">Manufacturer:</th>
-                        <td>????</td>
+                        <td>{activeItem.properties.manufacturer}</td>
                       </tr>
                       <tr>
                         <th scope="row">Max Atmospheric Speed kpm:</th>
-                        <td>????</td>
+                        <td>{activeItem.properties.max_atmosphering_speed}</td>
                       </tr>
                       <tr>
                         <th scope="row">Model Name:</th>
-                        <td>????</td>
+                        <td>{activeItem.properties.model}</td>
                       </tr>
                       <tr>
-                        <th scope="row">Max Passengers:</th>
-                        <td>????</td>
+                        <th scope="row">Max Passengers N°:</th>
+                        <td>{activeItem.properties.passengers}</td>
                       </tr>
                     </tbody>
                   </Table>
@@ -203,4 +205,5 @@ switch (props.type) {
           </Card>
         </div>
 );
+};
 };

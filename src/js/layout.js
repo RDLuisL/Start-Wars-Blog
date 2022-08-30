@@ -6,7 +6,7 @@ import { Home } from "./views/home";
 import { Characters } from "./views/characters.js";
 import { Planets } from "./views/planets.js";
 import { Vehicles } from "./views/vehicles.js"
-import { Detail } from "./views/detail.js"
+import { Detail } from "./views/details.js"
 import { Navbar } from "./component/navbar.js";
 
 
@@ -26,7 +26,7 @@ const Layout = () => {
 						<Route exact path="/">
 							<Home />
 						</Route>
-						<Route exact path="/people">
+						<Route exact path="/character">
 							<Characters />
 						</Route>
 						<Route exact path="/planets">
@@ -35,7 +35,7 @@ const Layout = () => {
 						<Route exact path="/vehicles">
 							<Vehicles />
 						</Route>
-						<Route exact path="/people/:uid">
+						<Route exact path="/character/:uid">
 							<Detail />
 						</Route>
 						<Route exact path="/planets/:uid">
@@ -53,5 +53,6 @@ const Layout = () => {
 		</div>
 	);
 };
+export default Layout;
 
 

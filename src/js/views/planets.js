@@ -4,6 +4,7 @@ import { Context } from "../store/appContext";
 import { ItemCard } from "../component/itemCard";
 
 export const Planets = () => {
+	const planets = []
 	return (
 		<div className="container-full px-5 mt-3">
 			<div className="d-flex flex-wrap justify-content-start mb-4">

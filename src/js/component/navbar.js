@@ -1,10 +1,12 @@
 import React, { useState } from "react";
-
-
 import logo from "../../img/star-wars-logo.png";
-
 import { Link } from "react-router-dom";
-
+import {
+  Dropdown,
+  DropdownToggle,
+  DropdownItem,
+  DropdownMenu,
+} from "reactstrap";
 
 export const Navbar = () => {
 	return (
@@ -20,19 +22,10 @@ export const Navbar = () => {
 					</Link>
 				</div>
 				<div className="col-lg d-flex justify-content-center">
-					<Link to="/character">
-						<button className="btn btn-primary categories">Characters</button>
-					</Link>
-					<Link to="/planets">
-						<button className="btn btn-primary categories">Planets</button>
-					</Link>
-					<Link to="/vehicles">
-						<button className="btn btn-primary categories">Vehicles</button>
-					</Link>
-						<div className="d-flex justify-content-end">
+						<button className="pd-4 d-flex justify-content-end">
 								Favorites 
 							<i className="far fa-heart"></i>
-						</div>
+						</button>
 				</div>
 			</nav>
 		);

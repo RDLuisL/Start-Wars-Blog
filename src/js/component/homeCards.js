@@ -5,7 +5,7 @@ import {
   CardBody,
   Button
 } from "reactstrap";
-import "../../styles/homecard.css";
+import "../../styles/homeCards.css";
 
 export const HomeCard = (props) => {
   return (
@@ -20,7 +20,9 @@ export const HomeCard = (props) => {
         </CardBody>
         <CardBody id="text-area">
               <h3 id="title">{props.title}</h3>
-          <Link to={props.link}><Button className="exploreButton">{props.action}</Button></Link>
+          <Link to={props.link}><Button className="exploreButton">{props.action}
+            </Button>
+          </Link>
         </CardBody>
       </Card>
   );

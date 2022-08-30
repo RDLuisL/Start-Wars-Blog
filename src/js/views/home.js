@@ -1,14 +1,18 @@
 import React, { useEffect, useContext } from "react";
 import "../../styles/home.css";
-import { HomeCard } from "../component/homeCard";
-
+import "../../styles/homeCards.css";
 import { CardDeck } from "reactstrap";
-import charactersImg from "../../img/characters2-sw.jpg";
-import planetsImg from "../../img/planest-sw.png";
+import charactersImg from "../../img/characters2sw.jpg";
+import planetsImg from "../../img/planetssw.png";
 import vehiclesImg from "../../img/vehiclessw.png";
+import { HomeCard } from "../component/homeCards.js";
 
 export const Home = () => {
-  return (
+    const { store, actions } = useContext(Context);
+    useEffect(() => {
+    actions.getData(), [];
+    });
+    return (
       <CardDeck className="d-flex justify-content-around mt-5">
             <HomeCard
                 img={charactersImg}

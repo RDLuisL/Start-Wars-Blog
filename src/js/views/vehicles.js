@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { ItemCard } from "../component/itemCard";
 
 export const Vehicles = () => {
+	const vehicles =[]
 	return (
 		<div className="container-full px-5 mt-3">
 			<div className="d-flex flex-wrap justify-content-start mb-4">

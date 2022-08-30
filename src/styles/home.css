@@ -1,14 +1,17 @@
 #red {
-    -webkit-box-shadow: 6px 6px 8px 3px rgba(235,33,46,0.7); 
-    box-shadow: 6px 6px 8px 3px rgba(235,33,46,0.7);
+    -webkit-box-shadow: 10px 10px 125px 0px rgba(250,247,250,1);
+    -moz-box-shadow: 10px 10px 125px 0px rgba(250,247,250,1);
+    box-shadow: 10px 10px 125px 0px rgba(250,247,250,1);
     }
 
 #green {
-    -webkit-box-shadow: 6px 6px 8px 3px rgba(47,249,36,0.7); 
-        box-shadow: 6px 6px 8px 3px rgba(47,249,36,0.7);
+    -webkit-box-shadow: 10px 10px 125px 0px rgba(250,247,250,1);
+    -moz-box-shadow: 10px 10px 125px 0px rgba(250,247,250,1);
+    box-shadow: 10px 10px 125px 0px rgba(250,247,250,1);
     }
 
 #blue {
-    -webkit-box-shadow: 6px 6px 8px 3px rgba(46,103,248,0.7); 
-    box-shadow: 6px 6px 8px 3px rgba(46,103,248,0.7);
+    -webkit-box-shadow: 10px 10px 125px 0px rgba(250,247,250,1);
+    -moz-box-shadow: 10px 10px 125px 0px rgba(250,247,250,1);
+    box-shadow: 10px 10px 125px 0px rgba(250,247,250,1);
     }
