@@ -4,11 +4,12 @@ import { Context } from "../store/appContext";
 import { ItemCard } from "../component/itemCard";
 
 export const Planets = () => {
-	const planets = []
+	const { store, actions } = useContext(Context);
+	const planets = JSON.parse(sessionStorage.getItem('planets'))
 	return (
 		<div className="container-full px-5 mt-3">
 			<div className="d-flex flex-wrap justify-content-start mb-4">
-			{planets.map((key,index) => 
+				{planets.map((key,index) => 
 					<ItemCard 
 						key={index} 
 						name={planets[index].name}
@@ -17,11 +18,11 @@ export const Planets = () => {
 						index={index}
 					>
 					</ItemCard>)}
-						</div>
-						<div className="text-center mt-4 mb-5">
-					<Link to="/">
-						<button className="btn home-button">Goback</button>
-					</Link>
+			</div>
+			<div className="text-center mt-4 mb-5">
+				<Link to="/">
+					<button className="btn home-button">Goback</button>
+				</Link>
 			</div>
 		</div>
 	);

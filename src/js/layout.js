@@ -1,13 +1,13 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
-
 import { Home } from "./views/home";
 import { Characters } from "./views/characters.js";
 import { Planets } from "./views/planets.js";
 import { Vehicles } from "./views/vehicles.js"
 import { Detail } from "./views/details.js"
 import { Navbar } from "./component/navbar.js";
+import injectContext from "./store/appContext";
 
 
 
@@ -53,6 +53,6 @@ const Layout = () => {
 		</div>
 	);
 };
-export default Layout;
+export default injectContext(Layout);
 
 

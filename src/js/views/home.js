@@ -6,6 +6,7 @@ import charactersImg from "../../img/characters2sw.jpg";
 import planetsImg from "../../img/planetssw.png";
 import vehiclesImg from "../../img/vehiclessw.png";
 import { HomeCard } from "../component/homeCards.js";
+import { Context } from "../store/appContext";
 
 export const Home = () => {
     const { store, actions } = useContext(Context);
@@ -13,6 +14,7 @@ export const Home = () => {
     actions.getData(), [];
     });
     return (
+      // Home Landingcards
       <CardDeck className="d-flex justify-content-around mt-5">
             <HomeCard
                 img={charactersImg}
@@ -22,6 +24,7 @@ export const Home = () => {
                 color="red"
             >       
             </HomeCard>
+
             <HomeCard
                 img={planetsImg}
                 title="Planets"
@@ -30,6 +33,7 @@ export const Home = () => {
                 color="green"
             >
             </HomeCard>
+            
             <HomeCard
                 img={vehiclesImg}
                 title="Vehicles"

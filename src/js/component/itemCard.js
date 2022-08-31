@@ -1,9 +1,15 @@
-import React, {useProps} from "react";
-import { Link } from "react-router-dom"
-import { Card, CardImg, CardTitle, CardBody, Button
+import React, {useProps, useContext} from "react";
+import { Link } from "react-router-dom";
+import { 
+  Card, 
+  CardImg, 
+  CardTitle, 
+  CardBody, 
+  Button
 } from "reactstrap";
 import "../../styles/itemCard.css"
 import mando from "../../img/mando.jpg"
+import { Context } from "../store/appContext";
 
 export const ItemCard = (props) => {
   const {store, actions} = useContext(Context)
