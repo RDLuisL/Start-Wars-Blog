@@ -1,17 +1,29 @@
-#red {
-    -webkit-box-shadow: 10px 10px 125px 0px rgba(250,247,250,1);
-    -moz-box-shadow: 10px 10px 125px 0px rgba(250,247,250,1);
-    box-shadow: 10px 10px 125px 0px rgba(250,247,250,1);
+:root {
+    --primario: #9323A9;
+    --blancoOscuro: #7C1292;
+    --secundario: #e7b707;
+    --secundarioOscuro: #d3a500;
+    --blanco: #fff;
+    --oscuro: #000;
+    --fuentePrincipal: 'Staatliches', cursive;
+  
+  }
+
+
+#channel1 {
+    -webkit-box-shadow: 10px 10px 125px 0px var(--blanco);
+    -moz-box-shadow: 10px 10px 125px 0px var(--blanco);
+    box-shadow: 10px 10px 125px 0px var(--blanco);
     }
 
-#green {
-    -webkit-box-shadow: 10px 10px 125px 0px rgba(250,247,250,1);
-    -moz-box-shadow: 10px 10px 125px 0px rgba(250,247,250,1);
-    box-shadow: 10px 10px 125px 0px rgba(250,247,250,1);
+#channel2 {
+    -webkit-box-shadow: 10px 10px 125px 0px var(--blanco);
+    -moz-box-shadow: 10px 10px 125px 0px var(--blanco);
+    box-shadow: 10px 10px 125px 0px var(--blanco);
     }
 
-#blue {
-    -webkit-box-shadow: 10px 10px 125px 0px rgba(250,247,250,1);
-    -moz-box-shadow: 10px 10px 125px 0px rgba(250,247,250,1);
-    box-shadow: 10px 10px 125px 0px rgba(250,247,250,1);
+#channel3 {
+    -webkit-box-shadow: 10px 10px 125px 0px var(--blanco);
+    -moz-box-shadow: 10px 10px 125px 0px var(--blanco);
+    box-shadow: 10px 10px 125px 0px var(--blanco);
     }

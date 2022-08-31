@@ -18,7 +18,7 @@ export const DetailCard = (props) => {
   useEffect(() => {}, []);
   let activeItem = store.activeItem; 
 switch (props.type) {
-    case "characters":
+    case "people":
         return (
 
         <div className="container">

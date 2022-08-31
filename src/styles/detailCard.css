@@ -6,7 +6,6 @@
   --blanco: #fff;
   --oscuro: #000;
   --fuentePrincipal: 'Staatliches', cursive;
-
 }
 
 .detailImage {
@@ -15,8 +14,8 @@
   }
   
   .detailCard {
-    background-color: var(--oscuro);
-    background-image: linear-gradient(315deg, var(--oscuro) 0%, #414141 74%);
+    background-color: black;
+    background-image: linear-gradient(315deg, black 0%, #414141 74%);
   }
   
   .detailTitle {

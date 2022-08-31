@@ -1,19 +1,19 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import { ItemCard } from "../component/itemCard.js";
 import { Context } from "../store/appContext";
 
-export const Characters = () => {
+export const People = () => {
 	const { store, actions } = useContext(Context);
-	const characters = JSON.parse(sessionStorage.getItem('characters'))
+	const people = JSON.parse(sessionStorage.getItem('people'))
 	return (
 		<div className="container-full px-5 mt-3">
 			<div className="d-flex flex-wrap justify-content-start mb-4">
-				{characters.map((key,index) => 
+				{people.map((key,index) => 
 				<ItemCard 
 					key={index} 
-					name={characters[index].name} 
-					uid={characters[index].uid}
+					name={people[index].name} 
+					uid={people[index].uid}
 					type="people"
 					index={index}
 				>

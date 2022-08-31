@@ -2,7 +2,7 @@ import React, { useEffect, useContext } from "react";
 import "../../styles/home.css";
 import "../../styles/homeCards.css";
 import { CardDeck } from "reactstrap";
-import charactersImg from "../../img/characters2sw.jpg";
+import peopleImg from "../../img/characters2sw.jpg";
 import planetsImg from "../../img/planetssw.png";
 import vehiclesImg from "../../img/vehiclessw.png";
 import { HomeCard } from "../component/homeCards.js";
@@ -17,11 +17,11 @@ export const Home = () => {
       // Home Landingcards
       <CardDeck className="d-flex justify-content-around mt-5">
             <HomeCard
-                img={charactersImg}
-                title="Characters"
+                img={peopleImg}
+                title="people"
                 link="/character"
                 action="Profile Characters"
-                color="red"
+                color="channel1"
             >       
             </HomeCard>
 
@@ -30,7 +30,7 @@ export const Home = () => {
                 title="Planets"
                 link="/planets"
                 action="Explore Planets"
-                color="green"
+                color="channel2"
             >
             </HomeCard>
             
@@ -39,7 +39,7 @@ export const Home = () => {
                 title="Vehicles"
                 link="/vehicles"
                 action="Vehicles Details"
-                color="blue"
+                color="channel3"
             >
             </HomeCard>
         </CardDeck>
