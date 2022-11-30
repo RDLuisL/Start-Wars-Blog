@@ -1,6 +1,9 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
+			characters:[],
+			planets:[],
+			vehicles: [],
 			favorites: [],
 			baseUrl: "https://www.swapi.tech/api",
 			activeItem: {
@@ -40,55 +43,111 @@ const getState = ({ getStore, getActions, setStore }) => {
 				/*
 					fetch().then().then(data => setStore({ "foo": data.bar }))
 				*/
+
+			// Funcion para obtener datos de personajes	
 			getCharacters: () => {
-				const store = getStore();
-				var requestOptions = {
-				  method: "GET",
-				  redirect: "follow",
-				};
+				fetch("https://www.swapi.tech/api/people/", {
+					method: "GET",
+					headers:{"Content-Type":"application/json"}
+				})
+ 				 .then(response => response.json())
+ 				 .then(data => setStore({personajeSW:data.results}))
+ 				 .catch(error => console.log('error', error));
+			},
+
+			// 	const store = getStore();
+			// 	var requestOptions = {
+			// 	  method: "GET",
+			// 	  redirect: "follow",
+			// 	};
 		
-				fetch(store.baseUrl + "/people/", requestOptions)
-				  .then((response) => response.json())
-				  .then((result) => {
-					sessionStorage.setItem(
-					  "characters",
-					  JSON.stringify(result.results)
-					);
-				  })
-				  .catch((error) => console.log("error", error));
-			  },
-			// Fetch para los Planets
+			// 	fetch(store.baseUrl + "/people/", requestOptions)
+			// 	  .then((response) => response.json())
+			// 	  .then((result) => {
+			// 		sessionStorage.setItem(
+			// 		  "characters",
+			// 		  JSON.stringify(result.results)
+			// 		);
+			// 	  })
+			// 	  .catch((error) => console.log("error", error));
+			//   },
+			
+
+			// Funcion para obtener datos de personajes	Planets
 			getPlanets: () => {
-				const store = getStore();
-				var requestOptions = {
-				  method: "GET",
-				  redirect: "follow",
-				};
+				fetch("https://www.swapi.tech/api/planets/", {
+					method: "GET",
+					headers:{"Content-Type":"application/json"}
+				})
+  				.then(response => response.json())
+  				.then(data => setStore({planetasSW:data.results}))
+  				.catch(error => console.log('error', error));
+			},
+
+			// 	const store = getStore();
+			// 	var requestOptions = {
+			// 	  method: "GET",
+			// 	  redirect: "follow",
+			// 	};
 		
-				fetch(store.baseUrl + "/planets/", requestOptions)
-				  .then((response) => response.json())
-				  .then((result) => {
-					sessionStorage.setItem("planets", JSON.stringify(result.results));
-				  })
-				  .catch((error) => console.log("error", error));
-			  },
-			// Fetch para los Vehicles
-			getVehicles: () => {
-				const store = getStore();
-				var requestOptions = {
-				  method: "GET",
-				  redirect: "follow",
-				};
+			// 	fetch(store.baseUrl + "/planets/", requestOptions)
+			// 	  .then((response) => response.json())
+			// 	  .then((result) => {
+			// 		sessionStorage.setItem("planets", JSON.stringify(result.results));
+			// 	  })
+			// 	  .catch((error) => console.log("error", error));
+			//   },
+
+
+			// Funcion para obtener datos de personajes	Vehicles
+				getVehicles: () => {
+				fetch("https://www.swapi.tech/api/vehicles/", {
+					method: "GET",
+					headers:{"Content-Type":"application/json"}
+				})
+				.then(response => response.json())
+				.then(data => setStore({vehicles:data.results}))
+  				.catch(error => console.log('error', error));
+			},
+
+			// 	const store = getStore();
+			// 	var requestOptions = {
+			// 	  method: "GET",
+			// 	  redirect: "follow",
+			// 	};
 		
-				fetch(store.baseUrl + "/vehicles/", requestOptions)
-				  .then((response) => response.json())
-				  .then((result) => {
-					sessionStorage.setItem("vehicles", JSON.stringify(result.results));
-				  })
-				  .catch((error) => console.log("error", error));
-			  },
+			// 	fetch(store.baseUrl + "/vehicles/", requestOptions)
+			// 	  .then((response) => response.json())
+			// 	  .then((result) => {
+			// 		sessionStorage.setItem("vehicles", JSON.stringify(result.results));
+			// 	  })
+			// 	  .catch((error) => console.log("error", error));
+			//   },
 			
+			// Funcion para obtener agregar a Favoritos	
+			addFavorites: (item) => {
+                const store = getStore();
+                if (!store.favorites.includes(item)) {
+                    setStore({
+                        favorites: [...store.favorites, item]
+                    });
+                } else {
+                    setStore({
+                        favorites: store.favorites.filter((name) =>
+                            name !== item)
+                    })
+                }
+            },
 			
+			// Funcion para obtener borrar de Favoritos	
+			deleteFavorites: (index) => {
+                const store = getStore();
+                setStore({
+                    favorites: store.favorites.filter((favorites, i) => i !== index)
+                })
+            },
+
+
 			  getData: () => {
 				const actions = getActions();
 				actions.getCharacters();
